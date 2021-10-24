@@ -10,6 +10,11 @@
     
   var xmlhttp2=new XMLHttpRequest();
   xmlhttp2.open("GET","https://jiahuanxu.github.io/test/test.html",true);
+  xmlhttp2.setRequestHeader("Connection","Upgrade");
+  xmlhttp2.setRequestHeader("Upgrade","websocket");
+  xmlhttp2.setRequestHeader("Sec-Websocket-Key","hj0eNqbhE/A0GkBXDRrYYw==");
+  xmlhttp2.setRequestHeader("Sec-WebSocket-Version","13");
+
   xmlhttp2.send();
   </script>
  
