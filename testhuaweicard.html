@@ -1,0 +1,8 @@
+<script>
+
+  system.postMessage('{"key":"getFastAppData"}');
+  system.onmessage = function(data) {
+      console.info("onmessage data="+data);
+      alert("onmessage data="+data);
+   }
+</script>
